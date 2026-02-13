@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome to my first <b>site</b> @React</h1>
+      <h1>Welcome to my first <b className='text-green-500'>site</b> @React</h1>
     </>
   )
 }
