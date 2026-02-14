@@ -17,7 +17,7 @@ function NavLinks({
         <a class="" href="" >
             <div className="main-div inline-flex items-center gap-4 hover:bg-[#212121] hover:rounded-4xl transition-all duration-300 pt-2 pb-2 pl-3 pr-6">
                 <div className="svg-div">
-                        <svg
+                    <svg
                             className={`w-[${width}] h-[${height}] text-gray-800 dark:text-${color}`}
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ function NavLinks({
                         <path stroke="currentColor" d={pathD1} clipRule="evenodd" />
                     </svg>
                 </div>
-                <div className="text-div text-2xl">{text}</div>
+                <div className="text-div text-xl">{text}</div>
             </div>
         </a>
     )
