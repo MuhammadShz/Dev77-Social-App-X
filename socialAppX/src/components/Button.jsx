@@ -1,16 +1,26 @@
-import React from 'react'
 
 function Button(
   {
-    width="60",
+    width="15rem",
     bgColor="white",
     btnText="Post",
     hoverbgColor="gray",
-    hoverTextColor="black"
+    hoverTextColor="black",
   }
 ) {
   return (
-    <div className={`p-3 border border-white flex justify-center rounded-4xl bg-${bgColor} text-${hoverTextColor} font-bold w-${width} mt-10 hover:bg-${hoverbgColor}-300 cursor-pointer transistion-all duration-300 text-[20px]`}>{btnText}</div>
+    <div 
+      className="p-3 border border-white flex justify-center rounded-4xl font-bold mt-10 cursor-pointer transition-all duration-300 text-[20px]"
+      style={{
+        backgroundColor: bgColor,
+        color: hoverTextColor,
+        width: width,
+      }}
+      onMouseEnter={(e) => e.target.style.backgroundColor = hoverbgColor}
+      onMouseLeave={(e) => e.target.style.backgroundColor = bgColor}
+    >
+      {btnText}
+    </div>
   )
 }
 
